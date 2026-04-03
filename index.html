@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GayWebSite</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="container">
+            <span class="logo">AntiJarik</span>
+            <nav>
+                <ul>
+                    <li class="active"><a href="./">В начало</a></li>
+                    <li><a href="./about.html">О Ярике</a></li>
+                    <li><a href="#trending-games">Самые лучшие игры</a></li>
+                    <li><a href="index.html#Spas">Спасение</a></li>
+                    <li class="btn"><a href="./contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="hero container">
+            <div class="hero--info">
+                <h2></h2>
+                <h1>Этот сайт заминирован для игроков по имени Ярик, просьба не регать игры в рейтинг дота 2 ближайшие 12 часов!</h1>
+                <p>Он где-то в лесу на Алхимике...</p>
+                <a href="https://www.youtube.com/watch?v=PobAXziAu5w" target="_blank">
+    <button class="btn">ПРЕДОТВРАТИТЬ РУИН В ПАБЛИКАХ</button>
+</a>
+            </div>
+            <img src="IMG/Jarik middle.svg" alt="">
+        </div>
+<hr class="divider">  
+        <div class="container trending" id="trending-games"> 
+            <a href="#" class="see-all">Увидеть все</a>
+            <h3>Самые лучшие игры</h3>
+
+            <div class="games">
+                <div class="block">
+                    <img src="IMG/Game1.svg" alt="">
+                    <span><img src="IMG/fire.svg" alt="">Лучший танк (втанчил 12 раз)</span>
+                </div>
+                <div class="block">
+                    <img src="IMG/Game2.svg" alt="">
+                    <span><img src="IMG/fire.svg" alt="">Топ 1 игрок по нетворсу!</span>
+                </div>
+                <div class="block">
+                    <img src="IMG/Game3.svg" alt="">
+                    <span><img src="IMG/fire.svg" alt="">5 которая никогда не жалеет себя</span>
+                </div>
+                <div class="block">
+                    <img src="IMG/Game4.svg" alt="">
+                    <span><img src="IMG/fire.svg" alt="">Лучший мидер СНГ</span>
+                </div>
+            </div>
+        </div>
+<hr class="divider">            
+        <div class="conteiner big-text">
+            <p>На самом деле, Ярослав показывает выдающую игру на киберспортивной арене. Этот игрок не то что профи своего дела, а именно мастер! Человек, который может передавать свой опыт другим людям взявших под своё крыло. Ярослав, мы верим тебе и знаем, что у тебя всё получится!</p>
+            
+        </div>
+<hr class="divider">
+        <div class="container banner">
+            <h3>ВЕЛИКИЙ ЧЕЛОВЕК!</h3>
+            <p>Вы можете наблюдать лучшую статистику нашего Воронежского Борова:</p>
+            <img src="IMG/Jarik Stat.svg" alt="">
+        </div>
+<hr class="divider" id="Spas">
+        <div class="container email">
+            <h3>Подписаться на рассылку "Анти Руин!"</h3>
+            <p>При оформлении подписки вам будут приходить уведомления о том, когда Ярослав Лимарченко играет в доту, дабы сохранить ваши нервы путём ухода от игр с ним</p>
+            <div class="block">
+                <div>
+                    <h4>ПОДПИСКА БЕСПЛАТНА!</h4>
+                    <h5>Мы всего лишь хотим, чтобы вы апали птсы...</h5>
+                </div>
+                <div>
+                    <input type="email" id="emailField" placeholder="Введите ваш email">
+                    <button onclick="checkEmail()">Отправить на рассмотрение</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+
+    
+    <footer>
+        <div class="blocks container">
+                <div>
+                    <span class="logo">AntiJarik</span>
+                    <p>На самом деле, Ярослав показывает выдающую игру на киберспортивной арене. Этот игрок не то что профи своего дела, а именно мастер! Человек, который может передавать свой опыт другим людям взявших под своё крыло. Ярослав, мы верим тебе и знаем, что у тебя всё получится!</p>
+                </div>
+                <div>
+                    <h4>О Ярике</h4>
+                    <ul>
+                        <li>В начало</li>
+                        <li>Портфолио</li>
+                        <li>Спасение</li>
+                        <li>Контакты</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Контакты</h4>
+                    <p>Если у вас хватит смелости набрать этому человеку - вы очень сильный духом</p>
+                    <p>+7 920 453 61 02</p>
+                </div>
+        </div>
+        <hr>
+        <p>Компания ®2026 ООО "Противоярославское пиво"</p>
+
+    </footer>
+
+    <script>
+        function checkEmail() {
+            let email = document.querySelector('#emailField').value;
+            if(!email.includes('@')) alert('Нет @')
+            else if(!email.includes ('.')) alert('Нет .')
+            else alert ('Вы оформили подписку!')
+        }
+    </script>
+</body>
+
+</html>
